@@ -1,0 +1,7 @@
+Flask
+pandas
+gunicorn
+scikit-learn
+nltk
+beautifulsoup4==4.9.3
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .dialog-box {
+            position: relative;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+            box-shadow: 0 4px 8px #178066 ; /* Updated box shadow */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        a {
+            padding: 10px 20px;
+            background-color: #178066;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #fff;
+            color: #178066;
+            border: 3px solid #178066;
+        }
+    </style>
+</head>
+<body>
+    <div class="dialog-box">
+        <p><i><B>"This service will be coming soon"</B></i></p>
+        <a href="BT_home">Home</a>
+    </div>
+</body>
+</html>

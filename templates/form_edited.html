@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/images/favicon.png" type="">
+    <title>Medical Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('https://wallpapers.com/images/hd/doctor-with-globe-in-hand-hd-medical-dff7ahiwc5xsfjm0.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: auto; /* Enable scrolling */
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            width: 350px;
+            text-align: center;
+            max-width: 80%;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+            min-height: 300px; /* Adjusted minimum height */
+        }
+
+        .login-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .login-container h2 {
+            color: #62d2a2;
+            margin-bottom: 20px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            box-sizing: border-box;
+            outline: none;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 12px;
+            background-color:#62d2a2;
+            color: black;
+            border-radius: 25px;
+            border-color:#62d2a2;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+            transform-origin: center;
+            
+        }
+
+        .login-form button:hover {
+            background-color: white;
+            transform: scale(1.05);
+            color:#62d2a2;
+            
+            
+        
+        }
+
+        .login-form input::placeholder {
+            color: #62d2a2;
+        }
+
+        .login-form input:focus,
+        .login-form button:focus {
+            outline: none;
+        }
+
+        .login-form a {
+            color: #333;
+            text-decoration: none;
+            margin-top: 15px;
+            display: inline-block;
+            font-size: 14px;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+            animation-delay: 1s;
+        }
+
+       
+
+        /* ... (rest of your styles remain unchanged) */
+
+        .login-form button{
+            color:white;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Enter your details</h2>
+        <form class="login-form" action="/login_validation" method="POST">
+            <input type="email" name="username" placeholder="Enter Email" required>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
